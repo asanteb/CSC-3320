@@ -32,15 +32,23 @@ public class Animals {
     public void setColor   (String c) { this.color  = c; }
     public void setGender  (String g) { this.gender = g; }
     public void setNote    (String n) { this.note   = n; }
-    // public void hungry() {
-    // }
 
-    void sleeping() {
-    }
+    //super
     public static void main(String []args) {
 
-        Creep poo = new Creep();
+    Animal poo = new Creep();
+    poo.setAge(2);
+    System.out.println(poo.age);
+    }
+}
+public class Dog extends Animals {
+        public static void main(String []args) {
+
+        Animal poo = new Creep();
         poo.setAge(2);
         System.out.println(poo.age);
     }
+}
+public class Cat extends Animals {
+    
 }
